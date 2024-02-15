@@ -10,6 +10,10 @@ function getLargestNumber(num1, num2, num3) {
 	return Math.max(num1, num2, num3);
 }
 
+function getLastName(names) {
+	return names[names.length - 1];
+}
+
 console.log(
 
     isNumberPositive(-1), // returns false
@@ -21,9 +25,9 @@ console.log(
     getLargestNumber(2, 1, 4), // returns 4
     getLargestNumber(6, 2, 3), // returns 6
 
-    // getLastName(["Charlie", "Rob", "Andy"]), // returns “Andy"
-    // getLastName(["Ash", "Stu"]), // returns "Stu"
-    //
+    getLastName(["Charlie", "Rob", "Andy"]), // returns “Andy"
+    getLastName(["Ash", "Stu"]), // returns "Stu"
+
     // allNumbersPositive([2, 4, 5]), // returns true
     // allNumbersPositive([-5, 4, 6]) // returns false
 
