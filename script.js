@@ -14,6 +14,11 @@ function getLastName(names) {
 	return names[names.length - 1];
 }
 
+function allNumbersPositive(numbers) {
+	const numbersIncludeNegative = numbers.some(num => num < 0);
+	return !numbersIncludeNegative;
+}
+
 console.log(
 
     isNumberPositive(-1), // returns false
@@ -28,7 +33,7 @@ console.log(
     getLastName(["Charlie", "Rob", "Andy"]), // returns “Andy"
     getLastName(["Ash", "Stu"]), // returns "Stu"
 
-    // allNumbersPositive([2, 4, 5]), // returns true
-    // allNumbersPositive([-5, 4, 6]) // returns false
+    allNumbersPositive([2, 4, 5]), // returns true
+    allNumbersPositive([-5, 4, 6]) // returns false
 
 )
