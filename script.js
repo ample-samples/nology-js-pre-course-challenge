@@ -2,14 +2,18 @@ function isNumberPositive(num) {
 	return num >=0;
 }
 
+function convertDaysToAge(days) {
+	return Math.floor(days/365);
+}
+
 console.log(
 
     isNumberPositive(-1), // returns false
     isNumberPositive(10), // returns true
 
-    // convertDaysToAge(3650), // returns 10
-    // convertDaysToAge(6570), // returns 18
-    //
+    convertDaysToAge(3650), // returns 10
+    convertDaysToAge(6570), // returns 18
+
     // getLargestNumber(2, 1, 4), // returns 4
     // getLargestNumber(6, 2, 3), // returns 6
     //
